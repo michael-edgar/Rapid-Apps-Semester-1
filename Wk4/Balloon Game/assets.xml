@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.25" GSCVersion="1.25.5977">
+  <sounds>
+    <music name="Spooky_Scary_Skeletons_Remix_-Extended_Mix">
+      <file name="Spooky_Scary_Skeletons_Remix_-Extended_Mix.mp3" size="3667590" />
+    </music>
+  </sounds>
+  <images>
+    <image name="sky">
+      <file name="sky.png" size="123656" />
+    </image>
+    <image name="Pumpkin">
+      <file name="Pumpkin.png" size="52458" />
+    </image>
+    <image name="flame">
+      <file name="flame.png" size="26834" />
+    </image>
+    <image name="play-button">
+      <file name="play-button.png" size="68026" />
+    </image>
+    <image name="Title">
+      <file name="Title.png" size="33979" />
+    </image>
+    <image name="Lose-Screen">
+      <file name="Lose-Screen.png" size="39267" />
+    </image>
+  </images>
+  <fonts />
+  <behaviors />
+</assets>

@@ -1,0 +1,2 @@
+libsndfile copyright (C) 1999-2011Erik de Castro Lopo <erikd@mega-nerd.com>
+licensed under GNU Lesser General Public License version 3 (http://www.gnu.org/copyleft/lesser.html)

@@ -1,0 +1,352 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #404040;
+	color: #fff;
+	font: 13px Segoe UI, sans-serif;
+	line-height: 1;
+}
+
+#player-area {
+	padding-bottom: 160px;
+}
+
+#player-layout {
+	padding: 12px;
+}
+
+#gse-player {
+	background-color: #000;
+	margin: 0 auto;
+	position: relative;
+}
+
+#scene-title {
+	text-align: center;
+}
+
+#scenes-area {
+	background-color: #333;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+#scenes-area h1 {
+	background: #444;
+	background-image: -webkit-gradient(linear, center bottom, center top, from(rgb(16, 16, 16)), to(rgb(64, 64, 64)));
+	background: -moz-linear-gradient(top, #404040, #101010);
+	background: -webkit-linear-gradient(top, #404040, #101010);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#404040', endColorstr = '#101010');
+	border: solid 1px #000;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	padding-top: 0.333em;
+	padding-bottom: 0.333em;
+	text-align: center;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+/* gsp.SceneSelector */
+#scene-selector {
+	height: 128px;
+	max-width: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+#scene-selector ul {
+	text-align: left;
+	display: block;
+	white-space: nowrap;
+}
+
+#scene-selector li {
+	width: 128px;
+	margin: 10px;
+	display: inline-block;
+	text-align: center;
+	visibility: hidden; /* initially hidden */
+}
+
+#scene-selector li.visible {
+	visibility: visible;
+}
+
+#scene-selector a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#scene-selector img {
+	width: 90px;
+	height: 60px;
+	margin: 0 auto 10px auto;
+	display: block;
+	border: solid 2px #aaa;
+}
+
+#scene-selector img:hover {
+	cursor: pointer;
+}
+
+#scene-selector li.current img {
+	border-color: #0ff;
+}
+
+/* gsp.StubManager */
+#stub-layer {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 99;
+	visibility: visible;
+}
+
+#stub-layer * {
+	pointer-events: visible;
+}
+
+.stub-banner {
+	width: 100%;
+	height: 40px;
+	background-color: rgba(127, 127, 127, 0.5);
+	text-align: center;
+	color: white;
+	font: 16px sans-serif;
+	border-color: white;
+	display: none;
+}
+
+#stub-banner-top {
+	position: absolute;
+	top: 0;
+	border-bottom: solid 1px;
+}
+
+#stub-banner-bottom {
+	position: absolute;
+	bottom: 0;
+	border-top: solid 1px;
+}
+
+.stub-banner img {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	position: relative;
+	top: 3px;
+}
+
+.stub-banner span {
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	font-weight: bold;
+}
+
+.stub-dialog {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	font: 12px sans-serif;
+}
+
+.stub-dialog p {
+	width: 280px;
+	margin: 15% auto 0 auto;
+	padding: 40px 10px;
+	border: solid 1px #ccc;
+	border-radius: 4px;
+	text-align: center;
+	color: white;
+}
+
+.stub-dialog .stub-buttons {
+	width: 300px;
+	margin: 14px auto 0 auto;
+}
+
+.stub-dialog .stub-button {
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	border: solid 1px #ccc;
+	border-radius: 4px;
+	text-align: center;
+	color: white;
+	width: 86px;
+	padding: 11px 0;
+}
+
+.stub-dialog .stub-button-spacer {
+	display: inline-block;
+	float: right;
+	width: 18px;
+}
+
+.stub-gradient {
+	background: #444;
+	background-image: -webkit-gradient(linear, center bottom, center top, from(rgb(16, 16, 16)), to(rgb(64, 64, 64)));
+	background: -moz-linear-gradient(top, #404040, #101010);
+	background: -webkit-linear-gradient(top, #404040, #101010);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#404040', endColorstr = '#101010');
+}
+
+#config-area {
+	position: relative;
+	background: #444;
+	background-image: -webkit-gradient(linear, center bottom, center top, from(rgb(16, 16, 16)), to(rgb(64, 64, 64)));
+	background: -moz-linear-gradient(top, #404040, #101010);
+	background: -webkit-linear-gradient(top, #404040, #101010);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#404040', endColorstr = '#101010');
+	border: solid 1px #000;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	padding: 0.666em 2em;
+}
+
+#config-area .right {
+	float: right;
+}
+
+#config-area .center {
+	position: absolute;
+	left: 50%;
+	top: 0.5em;
+}
+
+#config-area .center div {
+	position: relative;
+	left: -50%;
+}
+
+#config-reset {
+	position: relative;
+	top: -1px;
+}
+
+.windows-creator #config-area {
+	display: none;
+}
+
+.mac-creator #config-area .right {
+	margin-right: 198px;
+}
+
+#select-log {
+	display: none;
+}
+
+#log-area {
+	position: absolute;
+	top: 0;
+	bottom: 160px;
+	left: 0;
+	right: 0;
+	opacity: 0.9;
+	pointer-events: none;
+	visibility: hidden; /* initially hidden */
+	font-family: monospace;
+}
+
+#log-list {
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+}
+
+#log-list pre {
+	font: 12px Consolas, Menlo, monospace;
+	margin: 0.25em 1em;
+}
+
+#log-area .error {
+	color: #f33;
+}
+
+#log-area .warn {
+	color: #ff3;
+}
+
+#log-area .strict {
+	color: #f93;
+}
+
+.displayNone {
+	display: none;
+}
+
+@-webkit-keyframes gse-rotate {
+
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes gse-rotate {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+@-webkit-keyframes gse-webkit-rotate {
+	from {
+		-webkit-transform: rotateZ(0deg);
+	}
+	to {
+		-webkit-transform: rotateZ(360deg);
+	}
+}
+
+#gse-preloading, #gse-loading {
+	position: absolute;
+	visibility: visible;
+	pointer-events: none;
+}
+
+#gse-preloading.gse-hidden, #gse-loading.gse-hidden {
+	visibility: hidden;
+}
+
+#gse-preloading {
+	width: 84px;
+	height: 84px;
+	left: 50%;
+	top: 50%;
+}
+
+#gse-preloading img {
+	position: relative;
+	width: 84px;
+	height: 84px;
+	left: -42px;
+	top: -42px;
+}
+
+#gse-loading img {
+	position: absolute;
+	width: 42px;
+	height: 42px;
+	right: 10px;
+	bottom: 10px;
+}
+
+#gse-preloading img, #gse-loading img {
+	animation: gse-rotate 1.618s infinite linear;
+	-webkit-animation: gse-webkit-rotate 1.618s infinite linear;
+}

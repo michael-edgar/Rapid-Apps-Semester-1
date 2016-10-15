@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>GameSalad Preview</title>
+<link rel="stylesheet" type="text/css" href="css/gse-style.css" />
+<link rel="stylesheet" type="text/css" href="css/gsp-preview.css" />
+<script type="text/javascript" src="js/gsp-preview-head.js"></script>
+</head>
+<body>
+<div id="page" class="creator windows-creator">
+	<div id="config-area">
+		<div class="right">
+			<select id="select-simulate">
+				<option>Simulate...</option>
+				<option value="back">Device: back button</option>
+			</select>
+			<select id="select-log">
+				<option value="off">Debug: hide</option>
+				<option value="on">Debug: show</option>
+			</select>
+		</div>
+		<select id="select-zoom">
+			<option value="2">200%</option>
+			<option value="1.5">150%</option>
+			<option value="1.25">125%</option>
+			<option value="1" selected>100%</option>
+			<option value="0.75">75%</option>
+			<option value="0.5">50%</option>
+		</select>
+		<select id="select-resolution">
+			<option>-</option>
+			<option value="568x320">iPhone</option>
+			<option value="480x320">iPhone Legacy</option>
+			<option value="1024x768">iPad</option>
+			<option value="1024x600">Nook Color</option>
+			<option value="1024x580">Kindle Fire</option>
+			<option value="480x320">GameSalad Arcade</option>
+			<option value="1280x720">720p HD</option>
+			<option value="1280x800">MacBook</option>
+			<option value="800x450">Generic 16:9</option>
+			<option value="800x480">Generic 15:9</option>
+			<option value="800x500">Generic 16:10</option>
+			<option value="720x480">Generic 3:2</option>
+			<option value="640x480">Generic 4:3</option>
+		</select>
+		<select id="select-orientation">
+			<option>-</option>
+			<option value="landscape">Landscape</option>
+			<option value="portrait">Portrait</option>
+		</select>
+		<select id="select-fit">
+			<option>-</option>
+			<option value="letterbox">Letterbox</option>
+			<option value="overscan">Crop</option>
+			<option value="stretch">Stretch</option>
+		</select>
+		<div class="center">
+			<div>
+				<img id="config-reset" src="images/reset-30x22.png" />
+				<img id="config-pause" src="images/pause-30x22.png" />
+				<img id="config-play" src="images/play-30x22.png" class="displayNone" />
+			</div>
+		</div>
+	</div>
+	<div id="player-area">
+		<div id="player-layout">
+			<div id="gse-player" class="gse-frame">
+				<div class="gse-overlay">
+					<div id="gse-text" class="gse-dialog">
+						<div>
+							<textarea id="gse-text-input"></textarea>
+						</div>
+						<div>
+							<button id="gse-text-cancel">Cancel</button>
+							<button id="gse-text-done">Done</button>
+							<p id="gse-text-prompt"></p>
+						</div>
+					</div>
+					<div id="gse-browser" class="gse-dialog">
+						<div>
+							<iframe id="gse-browser-frame"></iframe>
+						</div>
+						<div>
+							<button id="gse-browser-close">Close</button>
+						</div>
+					</div>
+					<div id="stub-layer">
+						<div id="stub-banner-top" class="stub-banner stub-gradient">
+							<img src="images/bowlboy-153x150.png" width="32" height="32" />
+							<span data-localization-token="STUB_SHOW_BANNER"></span>
+						</div>
+						<div id="stub-banner-bottom" class="stub-banner stub-gradient">
+							<img src="images/bowlboy-153x150.png" width="32" height="32" />
+							<span data-localization-token="STUB_SHOW_BANNER"></span>
+						</div>
+						<div id="stub-dialog-one-button" class="stub-dialog">
+							<p id="stub-dialog-one-button-body" class="stub-gradient"></p>
+
+							<div class="stub-buttons">
+								<button id="stub-dialog-one-button-ok" class="stub-button stub-gradient" data-localization-token="STUB_BUTTON_OK">OK</button>
+							</div>
+						</div>
+						<div id="stub-dialog-three-button" class="stub-dialog">
+							<p id="stub-dialog-three-button-body" class="stub-gradient"></p>
+
+							<div class="stub-buttons">
+								<button id="stub-dialog-three-button-cancel" class="stub-button stub-gradient" data-localization-token="STUB_BUTTON_CANCEL">Cancel</button>
+								<div class="stub-button-spacer">&nbsp;</div>
+								<button id="stub-dialog-three-button-error" class="stub-button stub-gradient" data-localization-token="STUB_BUTTON_ERROR">Error</button>
+								<div class="stub-button-spacer">&nbsp;</div>
+								<button id="stub-dialog-three-button-success" class="stub-button stub-gradient" data-localization-token="STUB_BUTTON_SUCCESS">Success</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="scene-title" data-localization-token="LOADING"></div>
+		<!--<div id="log-area">
+			<div id="log-list"></div>
+		</div>-->
+	</div>
+	<div id="scenes-area">
+		<h1 id="scenes-heading" data-localization-token="SCENES_HEADING"></h1>
+
+		<div id="scene-selector">
+			<ul id="scene-selector-list">
+				<!-- SceneSelector -->
+				<li>
+					<img src="images/scene-90x60.png" /><a href="#" data-localization-token="LOADING"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="scripts">
+	<script type="text/javascript">
+	// NOTE: This script does dynamic resizing and text replacement.
+	// It must be inline so that it can alter the page before it is rendered.
+	(function() {
+		'use strict';
+
+		// FIXME: Mac Creator's inline options
+		window.inlineOptions = {
+			GAME_URL: '<<GAME_URL>>',
+			WIDTH: '<<WIDTH>>',
+			HEIGHT: '<<HEIGHT>>',
+			MASALA_URL: '<<MASALA_URL>>',
+			GAME_TITLE: '<<GAME_TITLE>>'
+		};
+
+		gsp.localizeFromURL('page', window.location);
+		gsp.detectLayout('page');
+		gsp.resizeRenderFrame('gse-player', window.inlineOptions);
+	})();
+	</script>
+	<script type="text/javascript" src="js/gse/gse-preview.js"></script>
+	<script type="text/javascript" src="js/gsp-preview-body.js"></script>
+</div>
+</body>
+</html>

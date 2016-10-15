@@ -1,0 +1,10 @@
+[0929/090631:WARNING:resource_bundle.cc(304)] locale_file_path.empty()
+[0929/090631:ERROR:main_delegate.cc(567)] Could not load locale pak for en-US
+[0929/090631:WARNING:resource_bundle.cc(501)] locale resources are not loaded
+[0929/090631:WARNING:resource_bundle.cc(304)] locale_file_path.empty()
+[0929/090631:ERROR:main_delegate.cc(567)] Could not load locale pak for en-US
+[0929/090734:WARNING:resource_bundle.cc(304)] locale_file_path.empty()
+[0929/090734:ERROR:main_delegate.cc(567)] Could not load locale pak for en-US
+[0929/090734:ERROR:renderer_main.cc(212)] Running without renderer sandbox
+[0929/090740:WARNING:resource_bundle.cc(501)] locale resources are not loaded
+[0929/090740:ERROR:content_client.cc(137)] No localized string available for id 19010

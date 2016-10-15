@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.25" GSCVersion="1.25.5977">
+  <sounds />
+  <images>
+    <image name="platform">
+      <file name="platform.png" size="2832" />
+    </image>
+    <image name="Ninky Nonk">
+      <file name="Ninky Nonk.png" size="869808" />
+    </image>
+    <image name="tombiloos">
+      <file name="tombiloos.png" size="126715" />
+    </image>
+    <image name="tree">
+      <file name="tree.png" size="55405" />
+    </image>
+    <image name="Clouds">
+      <file name="Clouds.png" size="163039" />
+    </image>
+    <image name="Finish">
+      <file name="Finish.png" size="6525" />
+    </image>
+  </images>
+  <fonts />
+  <behaviors />
+</assets>

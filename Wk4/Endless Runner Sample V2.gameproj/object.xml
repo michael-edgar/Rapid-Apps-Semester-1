@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game GSCVersion="0.10.4.1" PGFVersion="0.19" title="Endless Runner V2"><resolutionIndependence>0</resolutionIndependence><resolution>12</resolution><longDescription>A static level endless runner style game.
+
+From Jamie Cross (www.jamie-cross.net)</longDescription><prototypes><actor id="id971416"/><actor id="id455775"/><actor id="id926969"/><actor id="id462593"/><actor id="id634603"/></prototypes><plugins><attributes id="playhaven"/><attributes id="qqgamecenter"><boolean id="enabled">false</boolean></attributes></plugins><scenes><scene id="id269551"/></scenes><attributes><text id="name">default name</text><real id="time">0</real><size id="displaySize"><real id="width">568</real><real id="height">320</real></size><text id="actorTags">bad</text></attributes></game>

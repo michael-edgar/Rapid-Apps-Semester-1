@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene PGFVersion="0.25" GSCVersion="1.25.5977" id="id961546">
+  <layers>
+    <layer id="id520897">
+      <actors>
+        <actor id="id215223" prototype="id207477">
+          <attributes>
+            <point id="position">
+              <real id="x">41</real>
+              <real id="y">384</real>
+            </point>
+            <size id="size">
+              <real id="width">80</real>
+              <real id="height">771</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id119581" prototype="id207477">
+          <attributes>
+            <point id="position">
+              <real id="x">513</real>
+              <real id="y">39</real>
+            </point>
+            <size id="size">
+              <real id="width">81</real>
+              <real id="height">1021</real>
+            </size>
+            <angle id="rotation">90</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id884954" prototype="id207477">
+          <attributes>
+            <point id="position">
+              <real id="x">983</real>
+              <real id="y">383</real>
+            </point>
+            <size id="size">
+              <real id="width">83</real>
+              <real id="height">770</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id381528" prototype="id207477">
+          <attributes>
+            <point id="position">
+              <real id="x">514</real>
+              <real id="y">728</real>
+            </point>
+            <size id="size">
+              <real id="width">1020</real>
+              <real id="height">82</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id428809" prototype="id207477">
+          <attributes>
+            <point id="position">
+              <real id="x">249</real>
+              <real id="y">463</real>
+            </point>
+            <size id="size">
+              <real id="width">376</real>
+              <real id="height">55</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id657675" prototype="id207477">
+          <attributes>
+            <point id="position">
+              <real id="x">454</real>
+              <real id="y">408</real>
+            </point>
+            <size id="size">
+              <real id="width">376</real>
+              <real id="height">55</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id495083" prototype="id207477">
+          <attributes>
+            <point id="position">
+              <real id="x">619</real>
+              <real id="y">353</real>
+            </point>
+            <size id="size">
+              <real id="width">376</real>
+              <real id="height">55</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+        <actor id="id967654" prototype="id644246">
+          <attributes>
+            <point id="position">
+              <real id="x">150</real>
+              <real id="y">628</real>
+            </point>
+            <size id="size">
+              <real id="width">64</real>
+              <real id="height">64</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects />
+        </actor>
+      </actors>
+      <attributes>
+        <text id="name">Background</text>
+        <boolean id="scrollable">true</boolean>
+      </attributes>
+    </layer>
+  </layers>
+  <attributes>
+    <text id="name">Initial Scene</text>
+    <real id="time">0</real>
+    <size id="size">
+      <real id="width">1024</real>
+      <real id="height">768</real>
+    </size>
+    <boolean id="wrapX">false</boolean>
+    <boolean id="wrapY">false</boolean>
+    <point id="gravity">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <color id="color">
+      <real id="red">0</real>
+      <real id="green">0</real>
+      <real id="blue">0</real>
+      <real id="alpha">1</real>
+    </color>
+    <rect id="camera">
+      <point id="origin">
+        <real id="x">0</real>
+        <real id="y">0</real>
+      </point>
+      <size id="size">
+        <real id="width">1024</real>
+        <real id="height">768</real>
+      </size>
+      <size id="trackingArea">
+        <real id="width">944</real>
+        <real id="height">708</real>
+      </size>
+      <real id="rotation">0</real>
+    </rect>
+    <attributes id="autorotate">
+      <boolean id="landscapeLeft">true</boolean>
+      <boolean id="portrait">false</boolean>
+      <boolean id="landscapeRight">false</boolean>
+      <boolean id="portraitUpsideDown">false</boolean>
+    </attributes>
+  </attributes>
+</scene>

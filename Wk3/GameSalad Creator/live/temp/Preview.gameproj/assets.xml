@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets PGFVersion="0.25" GSCVersion="1.25.5977">
+  <sounds />
+  <images>
+    <image name="ufo01">
+      <file name="ufo01.png" size="2016" />
+    </image>
+    <image name="lava">
+      <file name="lava.png" size="3142" />
+    </image>
+    <image name="lava02">
+      <file name="lava02.png" size="2997" />
+    </image>
+    <image name="ufo02">
+      <file name="ufo02.png" size="2025" />
+    </image>
+    <image name="gem01">
+      <file name="gem01.png" size="3651" />
+    </image>
+  </images>
+  <fonts />
+  <behaviors />
+</assets>

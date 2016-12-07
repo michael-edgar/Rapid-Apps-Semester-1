@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: f6ac917cfe9c349469e3715705033dc4
-timeCreated: 1481113841
+timeCreated: 1481120887
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Forest
     21300002: Ground
+    21300004: ExtraSky
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -82,6 +83,21 @@ TextureImporter:
         - {x: -287, y: -20.5}
         - {x: 287, y: -20.5}
         - {x: 287, y: 20.5}
+    - name: ExtraSky
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 202
+        width: 620
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -310, y: 19}
+        - {x: -310, y: -19}
+        - {x: 310, y: -19}
+        - {x: 310, y: 19}
     outline: []
   spritePackingTag: 
   userData: 

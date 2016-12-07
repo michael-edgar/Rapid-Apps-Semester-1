@@ -51,11 +51,19 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 256
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: RedRidingHoodRightStanding
+    - serializedVersion: 2
+      name: RedRidingHoodRightStanding
       rect:
         serializedVersion: 2
         x: 5
@@ -66,7 +74,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: RedRidingHoodRightWalking
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RedRidingHoodRightWalking
       rect:
         serializedVersion: 2
         x: 36
@@ -77,7 +87,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: RedRidingHoodLeftStanding
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RedRidingHoodLeftStanding
       rect:
         serializedVersion: 2
         x: 5
@@ -88,7 +100,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: RedRidingHoodLeftWalking
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RedRidingHoodLeftWalking
       rect:
         serializedVersion: 2
         x: 37
@@ -99,7 +113,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: RedRidingHoodHead
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RedRidingHoodHead
       rect:
         serializedVersion: 2
         x: 5
@@ -110,6 +126,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

@@ -49,11 +49,19 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Forest
+    - serializedVersion: 2
+      name: Forest
       rect:
         serializedVersion: 2
         x: 0
@@ -63,12 +71,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -287, y: 98.5}
-        - {x: -287, y: -98.5}
-        - {x: 287, y: -98.5}
-        - {x: 287, y: 98.5}
-    - name: Ground
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Ground
       rect:
         serializedVersion: 2
         x: 0
@@ -78,12 +84,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -287, y: 20.5}
-        - {x: -287, y: -20.5}
-        - {x: 287, y: -20.5}
-        - {x: 287, y: 20.5}
-    - name: ExtraSky
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ExtraSky
       rect:
         serializedVersion: 2
         x: 0
@@ -93,11 +97,8 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -310, y: 19}
-        - {x: -310, y: -19}
-        - {x: 310, y: -19}
-        - {x: 310, y: 19}
+      outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 

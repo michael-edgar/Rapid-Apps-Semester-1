@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{8E63F5BE-5326-1A7B-8C1D-8FBC873F8A07}") = "Red Riding Hood", "Assembly-CSharp.csproj", "{2E171C43-3A90-4C96-A64A-FB253BB7EAF0}"
+EndProject
+Project("{8E63F5BE-5326-1A7B-8C1D-8FBC873F8A07}") = "Red Riding Hood", "Assembly-CSharp-Editor.csproj", "{D92E0FF9-4A44-89CF-30F4-9F0CBBCDE6CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E171C43-3A90-4C96-A64A-FB253BB7EAF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E171C43-3A90-4C96-A64A-FB253BB7EAF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E171C43-3A90-4C96-A64A-FB253BB7EAF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E171C43-3A90-4C96-A64A-FB253BB7EAF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D92E0FF9-4A44-89CF-30F4-9F0CBBCDE6CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92E0FF9-4A44-89CF-30F4-9F0CBBCDE6CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92E0FF9-4A44-89CF-30F4-9F0CBBCDE6CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92E0FF9-4A44-89CF-30F4-9F0CBBCDE6CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
